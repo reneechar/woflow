@@ -11,7 +11,7 @@ ENDPOINT = 'https://nodes-on-nodes-challenge.herokuapp.com/nodes/'
 START_ID = '089ef556-dfff-4ff2-9733-654645be56fe'
 
 # @param start_id [String] the starting node id
-# @return [Hash] the count of nodes in the graph node ids
+# @return [Hash] the count of nodes in the graph and the node ids
 def traverse_node(start_id)
     uniq_node_ids = Set.new([start_id])
     untraversed_ids = [start_id]
