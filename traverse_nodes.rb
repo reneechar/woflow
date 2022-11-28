@@ -7,7 +7,8 @@ require 'json'
 
 # URL Endpoint for retrieving node children ids
 ENDPOINT = 'https://nodes-on-nodes-challenge.herokuapp.com/nodes/'
-
+# Starting node id
+START_ID = '089ef556-dfff-4ff2-9733-654645be56fe'
 
 # @param start_id [String] the starting node id
 # @return [Hash] the count of nodes in the graph node ids
@@ -31,4 +32,4 @@ def traverse_node(start_id)
     }
 end
 
-puts traverse_node('089ef556-dfff-4ff2-9733-654645be56fe')
+puts traverse_node(START_ID)
